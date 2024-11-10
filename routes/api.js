@@ -33,7 +33,7 @@ module.exports = function (app) {
       if( !translatedText || translatedText == text ){
         res.send({ text, translation: "Everything looks good to me!" })
       } else {
-        res.send({ text, translation: translatedText });
+        res.send({ text, translation: translatedText[1] });
       }
     });
 };
