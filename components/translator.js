@@ -48,7 +48,7 @@ class Translator {
         });
 
         const wordsSpaces = Object.fromEntries(
-            Object.entries(dict).filter( ([ k, v ]) => k.includes( "" ))
+            Object.entries(dict).filter( ([ k, v ]) => k.includes( " " ))
         );
 
         Object.entries(wordsSpaces).map( ([ k, v ]) => {
